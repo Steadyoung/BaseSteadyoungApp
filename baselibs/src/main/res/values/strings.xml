@@ -1,0 +1,10 @@
+<resources>
+    <string name="http_message">网络加载中...</string>
+    <string name="net_error">网络请求出错，请检查网络状态！</string>
+    <string name="net_error_time_out">网络请求超时，请检查网络状态！</string>
+    <string name="net_error_no_reponse">网络请求出错</string>
+
+    <!--http错误返回码 提示信息-->
+    <string name="login_expired_tip">登录过期,请重新登录！</string>
+    <string name="str_null" />
+</resources>

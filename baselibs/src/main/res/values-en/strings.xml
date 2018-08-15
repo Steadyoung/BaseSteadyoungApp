@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="http_message">Network loading...</string>
+    <string name="net_error_no_reponse">Network request error</string>
+    <string name="net_error">Network request error, please check network status!</string>
+    <string name="net_error_time_out">Network request timeout, please check network status!</string>
+
+    <!--http错误返回码 提示信息-->
+    <string name="login_expired_tip">Login expired, please log in again</string>
+</resources>
