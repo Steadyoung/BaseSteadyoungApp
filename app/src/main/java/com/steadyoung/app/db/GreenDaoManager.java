@@ -1,8 +1,9 @@
-package com.steadyoung.app.baselibs.db;
+package com.steadyoung.app.db;
 
 import com.steadyoung.app.baselibs.base.BaseApplication;
 import com.steadyoung.greendao.gen.DaoMaster;
 import com.steadyoung.greendao.gen.DaoSession;
+import com.steadyoung.greendao.gen.TestBeanDao;
 
 /**
  * Created by Administrator on 2017/9/8.
@@ -57,10 +58,13 @@ public class GreenDaoManager {
         mDaoSession = mDaoMaster.newSession();
         return mDaoSession;
     }
-//
-//    public UserDao getUserDao(){
-//        return mDaoSession.getUserDao();
-//    }
-//
+
+    /**
+     * 获取TestBeanDao（TestBean数据库操作类）
+     * @return
+     */
+    public TestBeanDao getUserDao(){
+        return mDaoSession.getTestBeanDao();
+    }
 
 }

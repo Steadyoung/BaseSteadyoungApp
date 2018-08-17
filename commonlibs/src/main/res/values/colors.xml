@@ -15,6 +15,7 @@
 
     <color name="transparent">#00000000</color><!--透明色 -->
     <color name="transparent50">#e0000000</color><!--半透明色 -->
+    <color name="transparent25">#80000000</color><!--半透明色 -->
     <color name="ivory">#FFFFF0</color><!--象牙色 -->
     <color name="lightyellow">#FFFFE0</color><!--亮黄色 -->
     <color name="yellow">#FFFF00</color><!--黄色 -->

@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'org.greenrobot.greendao'
+
 android {
 
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
@@ -17,19 +17,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    //greendao配置
-    greendao {
-        schemaVersion 1 //数据库版本
-        daoPackage 'com.steadyoung.greendao.gen' //数据库管理类包名
-        targetGenDir 'src/main/java' //编译至文件夹
-    }
+
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
     //分包
-    implementation rootProject.ext.dependencies["multidex"]
+    api rootProject.ext.dependencies["multidex"]
 
 //    api rootProject.ext.dependencies["retrofit"]
 //    api rootProject.ext.dependencies["retrofit-converter-gson"]
@@ -45,11 +40,9 @@ dependencies {
     api rootProject.ext.dependencies["rxlifecycle2"]
     api rootProject.ext.dependencies["rxlifecycle2-components"]
 
-    //数据库框架
-    api rootProject.ext.dependencies["greendao"]
-
     //下拉刷新 上拉加载框架
     api rootProject.ext.dependencies["smartrefresh"]
+
     //内存检测工具LeakCanary
     debugApi rootProject.ext.dependencies["canary-debug"]
     releaseApi rootProject.ext.dependencies["canary-release"]
@@ -57,10 +50,6 @@ dependencies {
     //http拦截器
     debugApi rootProject.ext.dependencies["chuck"]
     releaseApi rootProject.ext.dependencies["chuck-no-op"]
-
-    //依赖注解框架
-    api rootProject.ext.dependencies["butterknife"]
-    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
 
     api project(':commonlibs')
 }

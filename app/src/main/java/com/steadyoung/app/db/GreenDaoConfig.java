@@ -1,4 +1,4 @@
-package com.steadyoung.app.baselibs.db;
+package com.steadyoung.app.db;
 
 /**
  * Created by Administrator on 2017/9/8.

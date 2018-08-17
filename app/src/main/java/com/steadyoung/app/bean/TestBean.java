@@ -1,8 +1,8 @@
-package com.steadyoung.app.baselibs.bean;
+package com.steadyoung.app.bean;
 
 import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Generated;
+import org.greenrobot.greendao.annotation.Id;
 
 /**
  * File description.
@@ -29,7 +29,7 @@ public class TestBean {
     }
 
     public long getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(long id) {
@@ -37,10 +37,11 @@ public class TestBean {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
+
 }

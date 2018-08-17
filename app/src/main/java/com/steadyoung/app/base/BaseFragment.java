@@ -1,4 +1,4 @@
-package com.steadyoung.app.baselibs.base;
+package com.steadyoung.app.base;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.lzy.okgo.OkGo;
+import com.steadyoung.app.baselibs.base.BasePresenter;
+import com.steadyoung.app.baselibs.base.BaseView;
+import com.steadyoung.app.module.simple.SimpleFragment;
 import com.trello.rxlifecycle2.components.support.RxFragment;
 
 import butterknife.ButterKnife;

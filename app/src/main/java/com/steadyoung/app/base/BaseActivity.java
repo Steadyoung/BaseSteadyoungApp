@@ -1,4 +1,4 @@
-package com.steadyoung.app.baselibs.base;
+package com.steadyoung.app.base;
 
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
@@ -8,6 +8,8 @@ import android.view.Window;
 
 import com.lzy.okgo.OkGo;
 import com.steadyoung.app.baselibs.R;
+import com.steadyoung.app.baselibs.base.BasePresenter;
+import com.steadyoung.app.baselibs.base.BaseView;
 import com.steadyoung.app.commonlibs.statusbar.AlexStatusBarUtils;
 import com.steadyoung.app.commonlibs.statusbar.StatusBarUtils;
 import com.steadyoung.app.commonlibs.widget.dialog.LoadDialog;

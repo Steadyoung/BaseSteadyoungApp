@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/i_test1"
+        android:checked="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="@string/test1" />
+
+    <item
+        android:id="@+id/i_test2"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="@string/test2" />
+    <!--must set the item title to empty-->
+    <item
+        android:id="@+id/i_empty"
+        android:title="" />
+    <item
+        android:id="@+id/i_test3"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="@string/test3" />
+    <item
+        android:id="@+id/i_test4"
+        android:icon="@mipmap/ic_launcher_round"
+        android:title="@string/test4" />
+</menu>

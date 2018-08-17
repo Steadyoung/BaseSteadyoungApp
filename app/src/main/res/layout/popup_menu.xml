@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent25"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/test1_ll"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_100"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/test2_ll"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_100"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/test3_ll"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_100"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--<com.github.clans.fab.FloatingActionButton-->
+                <!--android:layout_width="@dimen/dp_50"-->
+                <!--android:layout_height="@dimen/dp_50"-->
+                <!--android:src="@mipmap/ic_launcher_round"-->
+                <!--app:fab_colorNormal="@color/white"-->
+                <!--app:fab_colorPressed="@color/gray"-->
+                <!--app:fab_colorRipple="@color/blue"/>-->
+            <ImageView
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:src="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/pop_rl_click"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/pop_iv_img"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher_round" />
+    </RelativeLayout>
+
+</RelativeLayout>
